@@ -234,11 +234,8 @@ document.removeEventListener('keyup', control)
 
 function checkForWin() {
     if (score === 273) {
-        //stop each ghost
-        ghosts.forEach(ghost => clearInterval(ghost.timerId))
-        //remove the eventListener for the control function
+        ghosts.forEach(ghost => clearInterval(ghost.timerId)
         document.removeEventListener('keyup', control)
-        //tell our user we have won
         scoreDisplay.innerHTML = 'Congrats! You have won 🥳 '
     }
 }

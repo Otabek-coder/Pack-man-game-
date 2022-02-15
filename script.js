@@ -234,8 +234,8 @@ document.removeEventListener('keyup', control)
 
 function checkForWin() {
     if (score === 273) {
-        ghosts.forEach(ghost => clearInterval(ghost.timerId)
-        document.removeEventListener('keyup', control)
-        scoreDisplay.innerHTML = 'Congrats! You have won 🥳 '
+        ghosts.forEach(ghost => clearInterval(ghost.timerId));
+        document.removeEventListener('keyup', control);
+        scoreDisplay.innerHTML = 'Congrats! You have won 🥳 ';
     }
 }
